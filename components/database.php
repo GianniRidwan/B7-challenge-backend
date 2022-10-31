@@ -10,7 +10,7 @@ function openDatabase(){
     $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $connect;
   } catch (PDOException $error) {
-    die("kan geen verbiding maken met de db");
+    die("Kan geen verbinding maken met de database");
   }
 }
 ?>
